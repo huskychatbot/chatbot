@@ -1,0 +1,371 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#"
+     xml:base="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#American -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#American">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#Region"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#Chinese -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#Chinese">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#Region"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#Communicative_language -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#Communicative_language"/>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#Cuisine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#Cuisine"/>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#Englishman -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#Englishman">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#Region"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#Region -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#Region"/>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#family_relation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#family_relation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#honorable_surname -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#honorable_surname"/>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#name -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#name"/>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#position_title -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#position_title"/>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#time -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#time"/>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#week -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#week"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#American_Food -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#American_Food">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#Cuisine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#Beijing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#Beijing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#Chinese"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#Chinese_Food -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#Chinese_Food">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#Cuisine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#Friday -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#Friday">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#week"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#Gao_Wenzhong -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#Gao_Wenzhong">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#name"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#Li -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#Li">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#honorable_surname"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#Monday -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#Monday">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#week"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#New_York -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#New_York">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#American"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#Saturday -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#Saturday">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#week"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#Sunday -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#Sunday">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#week"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#Thursday -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#Thursday">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#week"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#Tuesday -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#Tuesday">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#week"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#Wang -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#Wang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#honorable_surname"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#Wang_Peng -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#Wang_Peng">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#name"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#Wednesday -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#Wednesday">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#week"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#a_quarter_after_six -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#a_quarter_after_six">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#time"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#a_quarter_to_six -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#a_quarter_to_six">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#time"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#dad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#dad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#family_relation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#daughter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#daughter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#family_relation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#doctor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#doctor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#position_title"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#eldest_brother -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#eldest_brother">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#family_relation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#excuse_me -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#excuse_me">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#Communicative_language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#hello -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#hello">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#Communicative_language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#lawyer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#lawyer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#position_title"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#li_You -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#li_You">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#name"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#mom -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#mom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#family_relation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#older_sister -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#older_sister">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#family_relation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#seven_thirty -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#seven_thirty">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#time"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#student -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#student">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#position_title"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#teacher -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#teacher">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#position_title"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#what_about_you -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#what_about_you">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#Communicative_language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#younger_brother -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#younger_brother">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-65#family_relation"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

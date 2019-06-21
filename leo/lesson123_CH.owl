@@ -1,0 +1,562 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#"
+     xml:base="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#中国人 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#中国人">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#地域"/>
+        <rdfs:comment>Chinese</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#亲属关系 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#亲属关系"/>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#吃饭 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#吃饭"/>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#名字 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#名字"/>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#地域 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#地域"/>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#工作称谓 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#工作称谓"/>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#日常交际用语 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#日常交际用语"/>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#时间 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#时间"/>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#星期 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#星期"/>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#美国人 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#美国人">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#地域"/>
+        <rdfs:comment>American</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#英国人 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#英国人">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#地域"/>
+        <rdfs:comment>Englishman</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#贵姓 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#贵姓"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#七点半 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#七点半">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#时间"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#七点半"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#时间"/>
+        <rdfs:comment>Seven-thirty</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#中国菜 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#中国菜">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#吃饭"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#中国菜"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#吃饭"/>
+        <rdfs:comment>Chinese food</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#五点三刻 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#五点三刻">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#时间"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#五点三刻"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#时间"/>
+        <rdfs:comment>a quarter to six</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#你呢 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#你呢">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#日常交际用语"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#你呢"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#日常交际用语"/>
+        <rdfs:comment>what about you</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#你好 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#你好">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#日常交际用语"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#你好"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#日常交际用语"/>
+        <rdfs:comment>hello</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#六点一刻 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#六点一刻">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#时间"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#六点一刻"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#时间"/>
+        <rdfs:comment>a quarter after six</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#北京人 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#北京人">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#中国人"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#北京人"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#中国人"/>
+        <rdfs:comment>Beijing</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#医生 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#医生">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#工作称谓"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#医生"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#工作称谓"/>
+        <rdfs:comment>Doctor</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#大哥 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#大哥">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#亲属关系"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#大哥"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#亲属关系"/>
+        <rdfs:comment>eldest brother</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#女儿 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#女儿">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#亲属关系"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#女儿"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#亲属关系"/>
+        <rdfs:comment>daughter</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#妈妈 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#妈妈">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#亲属关系"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#妈妈"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#亲属关系"/>
+        <rdfs:comment>mom</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#姐姐 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#姐姐">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#亲属关系"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#姐姐"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#亲属关系"/>
+        <rdfs:comment>older sister</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#学生 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#学生">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#工作称谓"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#学生"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#工作称谓"/>
+        <rdfs:comment>student</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#弟弟 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#弟弟">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#亲属关系"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#弟弟"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#亲属关系"/>
+        <rdfs:comment>younger brother</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#律师 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#律师">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#工作称谓"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#律师"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#工作称谓"/>
+        <rdfs:comment>lawyer</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#星期一 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#星期一">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#星期"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#星期一"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#星期"/>
+        <rdfs:comment>Monday</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#星期三 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#星期三">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#星期"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#星期三"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#星期"/>
+        <rdfs:comment>Wednesday</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#星期二 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#星期二">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#星期"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#星期二"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#星期"/>
+        <rdfs:comment>Tuesday</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#星期五 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#星期五">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#星期"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#星期五"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#星期"/>
+        <rdfs:comment>Friday</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#星期六 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#星期六">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#星期"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#星期六"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#星期"/>
+        <rdfs:comment>Saturday</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#星期四 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#星期四">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#星期"/>
+        <rdfs:comment>Thursday</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#星期天 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#星期天">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#星期"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#星期天"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#星期"/>
+        <rdfs:comment>Sunday</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#李 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#李">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#贵姓"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#李"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#贵姓"/>
+        <rdfs:comment>Li</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#李友 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#李友">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#名字"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#李友"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#名字"/>
+        <rdfs:comment>Li You</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#爸爸 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#爸爸">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#亲属关系"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#爸爸"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#亲属关系"/>
+        <rdfs:comment>dad</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#王 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#王">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#贵姓"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#王"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#贵姓"/>
+        <rdfs:comment>Wang</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#王朋 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#王朋">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#名字"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#王朋"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#名字"/>
+        <rdfs:comment>Wang Peng</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#纽约人 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#纽约人">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#美国人"/>
+        <rdfs:comment>New York</rdfs:comment>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#纽约人"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#美国人"/>
+        <rdfs:comment>New York</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#美国菜 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#美国菜">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#吃饭"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#美国菜"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#吃饭"/>
+        <rdfs:comment>American Food</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#老师 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#老师">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#工作称谓"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#老师"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#工作称谓"/>
+        <rdfs:comment>teacher</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#请问 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#请问">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#日常交际用语"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#请问"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#日常交际用语"/>
+        <rdfs:comment>Excuse me</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#高文中 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#高文中">
+        <rdf:type rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#名字"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#高文中"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/xujiaqi/ontologies/2019/5/untitled-ontology-55#名字"/>
+        <rdfs:comment>Gao Wenzhong</rdfs:comment>
+    </owl:Axiom>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
