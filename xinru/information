@@ -1,1 +1,5 @@
+from __future__ import print_function
+
+With __future__ module's inclusion, you can use the function in higher python version function in older python version.
+you have to use print as a function now, to bring the print function from Python 3 into Python 2.6+.
 
