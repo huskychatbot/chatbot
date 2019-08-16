@@ -6,11 +6,26 @@ from __future__ import print_function
     ## With __future__ module's inclusion, you can use the function in higher python version function in older python version.
     ## you have to use print as a function now, to bring the print function from Python 3 into Python 2.6+.
 
-
-
 import argparse
+
+    ## The argparse module makes it easy to write user-friendly command-line interfaces. The program defines what arguments it requires, 
+    ## and argparse will figure out how to parse those out of sys.argv. 
+    ## The argparse module also automatically generates help and usage messages and issues errors when users give the program
+    ## invalid arguments.
+    
 import multiprocessing
+
+    ## multiprocessing is a package that supports spawning processes using an API similar to the threading module. 
+    ## The multiprocessing package offers both local and remote concurrency,
+    ## effectively side-stepping the Global Interpreter Lock by using subprocesses instead of threads. 
+    ## Due to this, the multiprocessing module allows the programmer to fully leverage multiple processors on a given machine.
+    ## It runs on both Unix and Windows.
+    
 import os
+
+    ## The OS module in Python provides a way of using operating system dependent functionality. 
+    ## The functions that the OS module provides allows you to interface with the 
+    ## underlying operating system that Python is running on – be that Windows, Mac or Linux. 
 
 from tensorpack.callbacks.saver import ModelSaver
 from tensorpack.tfutils.sessinit import SaverRestore
