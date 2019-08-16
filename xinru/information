@@ -1,39 +1,58 @@
 # -*- coding: utf-8 -*-
 # /usr/bin/python2
 
+    # With __future__ module's inclusion, you can use the function in higher python version function in older python version.
+    # you have to use print as a function now, to bring the print function from Python 3 into Python 2.6+.
 from __future__ import print_function
-
-    ## With __future__ module's inclusion, you can use the function in higher python version function in older python version.
-    ## you have to use print as a function now, to bring the print function from Python 3 into Python 2.6+.
-
-import argparse
 
     ## The argparse module makes it easy to write user-friendly command-line interfaces. The program defines what arguments it requires, 
     ## and argparse will figure out how to parse those out of sys.argv. 
     ## The argparse module also automatically generates help and usage messages and issues errors when users give the program
     ## invalid arguments.
+import argparse
     
-import multiprocessing
-
     ## multiprocessing is a package that supports spawning processes using an API similar to the threading module. 
     ## The multiprocessing package offers both local and remote concurrency,
     ## effectively side-stepping the Global Interpreter Lock by using subprocesses instead of threads. 
     ## Due to this, the multiprocessing module allows the programmer to fully leverage multiple processors on a given machine.
     ## It runs on both Unix and Windows.
+import multiprocessing
     
-import os
-
     ## The OS module in Python provides a way of using operating system dependent functionality. 
     ## The functions that the OS module provides allows you to interface with the 
     ## underlying operating system that Python is running on – be that Windows, Mac or Linux. 
+import os
 
+    ## Callback is an interface to do everything else besides the training iterations.
 from tensorpack.callbacks.saver import ModelSaver
+    
+    ## Restore a tensorflow checkpoint saved by tf.train.Saver or ModelSaver.
 from tensorpack.tfutils.sessinit import SaverRestore
+
+    ## A collection of options to be used for single-cost trainers.
+    ## Note that you do not have to use TrainConfig. You can use the API of Trainer directly, 
+    ## to have more fine-grained control of the training.
 from tensorpack.train.interface import TrainConfig
+
+    ## Train with a TrainConfig and a Trainer, to present the simple and old training interface. 
+    ## It basically does the following 3 things (and you can easily do them by yourself if you need more control):
+    ## Setup the input with automatic prefetching heuristics, from config.data or config.dataflow.
+    ## Call trainer.setup_graph with the input as well as config.model.
+    ## Call trainer.train with rest of the attributes of config.
 from tensorpack.train.interface import launch_train_with_config
+
+    ## Data-parallel training in “replicated” mode, where each GPU contains a replicate of the whole model. 
+    ## It will build one tower on each GPU under its own variable scope. 
+    ## Each gradient update is averaged or summed across or GPUs through NCCL.
 from tensorpack.train.trainers import SyncMultiGPUTrainerReplicated
+
+    ## The logger module itself has the common logging functions of Python’s logging.Logger.
 from tensorpack.utils import logger
+
+    ## Enqueue datapoints from a DataFlow to a TF queue. And the model receives dequeued tensors.
 from tensorpack.input_source.input_source import QueueInput
+
+
 from data_load import Net1DataFlow
 from hparam import hparam as hp
 from models import Net1
