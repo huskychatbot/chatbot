@@ -52,10 +52,12 @@ from tensorpack.utils import logger
     ## Enqueue datapoints from a DataFlow to a TF queue. And the model receives dequeued tensors.
 from tensorpack.input_source.input_source import QueueInput
 
-
+    ## import files from other written python code
 from data_load import Net1DataFlow
 from hparam import hparam as hp
 from models import Net1
+
+    ## import tensorflow
 import tensorflow as tf
 
 
