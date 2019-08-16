@@ -60,7 +60,7 @@ from models import Net1
     ## import tensorflow
 import tensorflow as tf
 
-
+    ## define the train function with two paramaters (args, logdir)
 def train(args, logdir):
 
     # model
