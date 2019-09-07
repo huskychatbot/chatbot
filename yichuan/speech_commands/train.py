@@ -182,7 +182,7 @@ def main(_):
 
   tf.global_variables_initializer().run()
 
-  start_step = 3910
+  start_step = 5330
 
   if FLAGS.start_checkpoint:
     models.load_variables_from_checkpoint(sess, FLAGS.start_checkpoint)

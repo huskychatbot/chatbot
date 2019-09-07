@@ -122,7 +122,9 @@ def create_inference_graph(wanted_words, sample_rate, clip_duration_ms,
 
 
 def main(_):
-
+'''
+yichuan notes: create_inference_graph function is used to setup the model for UI. inside this function, we create a session. we feed wanted_words sample rate check_point for model and window size etc into the model. Then it calls  tf.contrib.quantize.create_eval_graph() to create a graph. There is also a frozen graph function to freeze the model.
+'''
   # Create the model and load its weights.
   sess = tf.InteractiveSession()
   create_inference_graph(
