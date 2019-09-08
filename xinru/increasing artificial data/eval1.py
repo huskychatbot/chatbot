@@ -1,19 +1,15 @@
-# -*- coding: utf-8 -*-
-# /usr/bin/python2
 
-from __future__ import print_function
 
 import argparse
-
-import tensorflow as tf
-
-from data_load import Net1DataFlow, phns, load_vocab
-from hparam import hparam as hp
-from models import Net1
-from utils import plot_confusion_matrix
 from tensorpack.predict.config import PredictConfig
 from tensorpack.predict.base import OfflinePredictor
 from tensorpack.tfutils.sessinit import SaverRestore
+import tensorflow as tf
+
+from data_load import Net1DataFlow, phns, load_vocab
+import params as hp
+from models import Net1
+from utils import plot_confusion_matrix
 
 
 def get_eval_input_names():
@@ -29,7 +25,7 @@ def eval(logdir):
     model = Net1()
 
     # dataflow
-    df = Net1DataFlow(hp.test1.data_path, hp.test1.batch_size)
+    df = Net1DataFlow(hp.Test1.data_path, hp.Test1.batch_size)
 
     ckpt = tf.train.latest_checkpoint(logdir)
 
@@ -59,15 +55,14 @@ def eval(logdir):
 
 def get_arguments():
     parser = argparse.ArgumentParser()
-    parser.add_argument('case', type=str, help='experiment case name')
+    parser.add_argument('-case', type=str, help='experiment case name')
     arguments = parser.parse_args()
     return arguments
 
 
 if __name__ == '__main__':
     args = get_arguments()
-    hp.set_hparam_yaml(args.case)
-    logdir = '{}/train1'.format(hp.logdir)
+    logdir = '{}/{}/train1'.format(hp.logdir_path, args.case)
     eval(logdir=logdir)
 
     print("Done")

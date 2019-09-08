@@ -1,5 +1,4 @@
-# -*- coding: utf-8 -*-
-# /usr/bin/python2
+
 
 import glob
 import random
@@ -10,7 +9,7 @@ from tensorpack.dataflow.base import RNGDataFlow
 from tensorpack.dataflow.common import BatchData
 from tensorpack.dataflow import PrefetchData
 from audio import read_wav, preemphasis, amp2db
-from hparam import hparam as hp
+import params as hp
 from utils import normalize_0_1
 
 
@@ -54,7 +53,8 @@ def wav_random_crop(wav, sr, duration):
 
     target_len = sr * duration
     wav_len = wav.shape[-1]
-    start = np.random.choice(range(np.maximum(1, wav_len - target_len)), 1)[0]
+    start = np.random.choice(
+        list(range(np.maximum(1, wav_len - target_len))), 1)[0]
     end = start + target_len
     if wav.ndim == 1:
         wav = wav[start:end]
@@ -64,31 +64,31 @@ def wav_random_crop(wav, sr, duration):
 
 
 def get_mfccs_and_phones(wav_file, trim=False, random_crop=True):
-
     '''This is applied in `train1` or `test1` phase.
     '''
 
     # Load
-    wav = read_wav(wav_file, sr=hp.default.sr)
+    wav = read_wav(wav_file, sr=hp.Default.sr)
 
-    mfccs, _, _ = _get_mfcc_and_spec(wav, hp.default.preemphasis, hp.default.n_fft,
-                                     hp.default.win_length,
-                                     hp.default.hop_length)
+    mfccs, _, _ = _get_mfcc_and_spec(wav, hp.Default.preemphasis, hp.Default.n_fft,
+                                     hp.Default.win_length,
+                                     hp.Default.hop_length)
 
     # timesteps
     num_timesteps = mfccs.shape[0]
 
     # phones (targets)
     phn_file = wav_file.replace("WAV", "PHN").replace("wav", "PHN")
+    #print(phn_file)
     phn2idx, idx2phn = load_vocab()
     phns = np.zeros(shape=(num_timesteps,))
     bnd_list = []
     for line in open(phn_file, 'r').read().splitlines():
         start_point, _, phn = line.split()
-        bnd = int(start_point) // hp.default.hop_length
+        bnd = int(start_point) // hp.Default.hop_length
         phns[bnd:] = phn2idx[phn]
         bnd_list.append(bnd)
-
+        #print(bnd_list)
     # Trim
     if trim:
         start, end = bnd_list[1], bnd_list[-1]
@@ -97,9 +97,11 @@ def get_mfccs_and_phones(wav_file, trim=False, random_crop=True):
         assert (len(mfccs) == len(phns))
 
     # Random crop
-    n_timesteps = (hp.default.duration * hp.default.sr) // hp.default.hop_length + 1
+    n_timesteps = (hp.Default.duration *
+                   hp.Default.sr) // hp.Default.hop_length + 1
     if random_crop:
-        start = np.random.choice(range(np.maximum(1, len(mfccs) - n_timesteps)), 1)[0]
+        start = np.random.choice(
+            list(range(np.maximum(1, len(mfccs) - n_timesteps))), 1)[0]
         end = start + n_timesteps
         mfccs = mfccs[start:end]
         phns = phns[start:end]
@@ -116,22 +118,22 @@ def get_mfccs_and_spectrogram(wav_file, trim=True, random_crop=False):
     '''This is applied in `train2`, `test2` or `convert` phase.
     '''
 
-
     # Load
-    wav, _ = librosa.load(wav_file, sr=hp.default.sr)
+    wav, _ = librosa.load(wav_file, sr=hp.Default.sr)
 
     # Trim
     if trim:
-        wav, _ = librosa.effects.trim(wav, frame_length=hp.default.win_length, hop_length=hp.default.hop_length)
+        wav, _ = librosa.effects.trim(
+            wav, frame_length=hp.Default.win_length, hop_length=hp.Default.hop_length)
 
     if random_crop:
-        wav = wav_random_crop(wav, hp.default.sr, hp.default.duration)
+        wav = wav_random_crop(wav, hp.Default.sr, hp.Default.duration)
 
     # Padding or crop
-    length = hp.default.sr * hp.default.duration
+    length = hp.Default.sr * hp.Default.duration
     wav = librosa.util.fix_length(wav, length)
 
-    return _get_mfcc_and_spec(wav, hp.default.preemphasis, hp.default.n_fft, hp.default.win_length, hp.default.hop_length)
+    return _get_mfcc_and_spec(wav, hp.Default.preemphasis, hp.Default.n_fft, hp.Default.win_length, hp.Default.hop_length)
 
 
 # TODO refactoring
@@ -141,25 +143,32 @@ def _get_mfcc_and_spec(wav, preemphasis_coeff, n_fft, win_length, hop_length):
     y_preem = preemphasis(wav, coeff=preemphasis_coeff)
 
     # Get spectrogram
-    D = librosa.stft(y=y_preem, n_fft=n_fft, hop_length=hop_length, win_length=win_length)
+    D = librosa.stft(y=y_preem, n_fft=n_fft,
+                     hop_length=hop_length, win_length=win_length)
     mag = np.abs(D)
 
     # Get mel-spectrogram
-    mel_basis = librosa.filters.mel(hp.default.sr, hp.default.n_fft, hp.default.n_mels)  # (n_mels, 1+n_fft//2)
+    mel_basis = librosa.filters.mel(
+        hp.Default.sr, hp.Default.n_fft, hp.Default.n_mels)  # (n_mels, 1+n_fft//2) 
     mel = np.dot(mel_basis, mag)  # (n_mels, t) # mel spectrogram
 
     # Get mfccs, amp to db
     mag_db = amp2db(mag)
     mel_db = amp2db(mel)
-    mfccs = np.dot(librosa.filters.dct(hp.default.n_mfcc, mel_db.shape[0]), mel_db)
+    mfccs = np.dot(librosa.filters.dct(
+        hp.Default.n_mfcc, mel_db.shape[0]), mel_db)
 
     # Normalization (0 ~ 1)
-    mag_db = normalize_0_1(mag_db, hp.default.max_db, hp.default.min_db)
-    mel_db = normalize_0_1(mel_db, hp.default.max_db, hp.default.min_db)
+    mag_db = normalize_0_1(mag_db, hp.Default.max_db, hp.Default.min_db)
+    mel_db = normalize_0_1(mel_db, hp.Default.max_db, hp.Default.min_db)
 
-    return mfccs.T, mag_db.T, mel_db.T  # (t, n_mfccs), (t, 1+n_fft/2), (t, n_mels)
+    # (t, n_mfccs), (t, 1+n_fft/2), (t, n_mels)
+    return mfccs.T, mag_db.T, mel_db.T
 
+#spanish phonemes _ means silence
+#phns = ['_', 'e', 'n', 'r', 'o', 'u', 's', 't', 'j', 'k', 'b', 'th', 'i', 'd', 'p', 'l', 'm', 'a', 'g', 'jj', 'rr', 'w', 'll', 'ch', 'f', 'nj', 'x']
 
+#english phonemes
 phns = ['h#', 'aa', 'ae', 'ah', 'ao', 'aw', 'ax', 'ax-h', 'axr', 'ay', 'b', 'bcl',
         'ch', 'd', 'dcl', 'dh', 'dx', 'eh', 'el', 'em', 'en', 'eng', 'epi',
         'er', 'ey', 'f', 'g', 'gcl', 'hh', 'hv', 'ih', 'ix', 'iy', 'jh',
@@ -172,5 +181,3 @@ def load_vocab():
     idx2phn = {idx: phn for idx, phn in enumerate(phns)}
 
     return phn2idx, idx2phn
-
-

@@ -1,5 +1,4 @@
-# -*- coding: utf-8 -*-
-#!/usr/bin/env python
+
 
 import re
 from tensorpack.utils import logger
@@ -60,5 +59,6 @@ class FilterGradientVariables(GradientProcessor):
                 to_print.append(var.op.name)
         if self._verbose and len(to_print):
             message = ', '.join(to_print)
-            logger.warn("No gradient w.r.t these trainable variables: {}".format(message))
+            logger.warn(
+                "No gradient w.r.t these trainable variables: {}".format(message))
         return g

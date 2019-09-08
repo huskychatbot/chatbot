@@ -1,5 +1,4 @@
-# -*- coding: utf-8 -*-
-#!/usr/bin/env python
+
 
 import glob
 import itertools
@@ -36,7 +35,7 @@ def normalize_0_1(values, max, min):
 
 
 def denormalize_0_1(normalized, max, min):
-    values =  np.clip(normalized, 0, 1) * (max - min) + min
+    values = np.clip(normalized, 0, 1) * (max - min) + min
     return values
 
 
@@ -50,7 +49,7 @@ def plot_confusion_matrix(correct_labels, predict_labels, labels, tensor_name='c
         tensor_name = 'MyFigure/image'  : Name for the output summay tensor
 
     Returns:
-        summary: TensorFlow summary 
+        summary: TensorFlow summary
 
     Other itema to note:
         - Depending on the number of category and the data , you may have to modify the figzie, font sizes etc. 
@@ -65,11 +64,13 @@ def plot_confusion_matrix(correct_labels, predict_labels, labels, tensor_name='c
     np.set_printoptions(precision=2)
     ###fig, ax = matplotlib.figure.Figure()
 
-    fig = matplotlib.figure.Figure(figsize=(7, 7), dpi=320, facecolor='w', edgecolor='k')
+    fig = matplotlib.figure.Figure(
+        figsize=(7, 7), dpi=320, facecolor='w', edgecolor='k')
     ax = fig.add_subplot(1, 1, 1)
     im = ax.imshow(cm, cmap='Oranges')
 
-    classes = [re.sub(r'([a-z](?=[A-Z])|[A-Z](?=[A-Z][a-z]))', r'\1 ', x) for x in labels]
+    classes = [re.sub(r'([a-z](?=[A-Z])|[A-Z](?=[A-Z][a-z]))', r'\1 ', x)
+               for x in labels]
     classes = ['\n'.join(wrap(l, 40)) for l in classes]
 
     tick_marks = np.arange(len(classes))
@@ -86,7 +87,7 @@ def plot_confusion_matrix(correct_labels, predict_labels, labels, tensor_name='c
     ax.yaxis.set_label_position('left')
     ax.yaxis.tick_left()
 
-    for i, j in itertools.product(range(cm.shape[0]), range(cm.shape[1])):
+    for i, j in itertools.product(list(range(cm.shape[0])), list(range(cm.shape[1]))):
         ax.text(j, i, format(cm[i, j], 'd') if cm[i, j] != 0 else '.', horizontalalignment="center", fontsize=6,
                 verticalalignment='center', color="black")
     fig.set_tight_layout(True)

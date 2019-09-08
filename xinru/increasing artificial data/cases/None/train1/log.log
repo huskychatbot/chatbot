@@ -1,0 +1,4 @@
+[32m[0606 14:03:37 @logger.py:90][0m Argv: train1.py
+[32m[0606 14:03:37 @parallel.py:184][0m [5m[31mWRN[0m MultiProcessPrefetchData does support Windows. However, Windows requires more strict picklability on processes, which may lead of failure on some of the code.
+[32m[0606 14:03:37 @parallel.py:194][0m [MultiProcessPrefetchData] Will fork a dataflow more than one times. This assumes the datapoints are i.i.d.
+[32m[0606 14:03:37 @sesscreate.py:38][0m [5m[31mWRN[0m User-provided custom session config may not work due to TF bugs. See https://github.com/tensorpack/tensorpack/issues/497 for workarounds.
