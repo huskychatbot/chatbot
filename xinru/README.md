@@ -3,7 +3,17 @@ mandarin chatbot
 this is where we put out notebooks that summarize each team members's research
 
 
-Running the train1.py file in the increasing_artificial_data
+Running the train1.py file in the increasing_artificial_data folder
+
+Type in command k when you see the following:
+
+case: None, logdir: cases/None/train1
+[0925 17:57:19 @logger.py:94] WRN Log directory cases/None/train1 exists! Please either backup/delete it, or use a new directory.
+[0925 17:57:19 @logger.py:96] WRN If you're resuming from a previous run you can choose to keep it.
+[0925 17:57:19 @logger.py:97] Select Action: k (keep) / b (backup) / d (delete) / n (new) / q (quit):
+
+
+And this is the error message I got:
 
 Traceback (most recent call last):
 
